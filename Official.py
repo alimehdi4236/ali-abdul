@@ -58,29 +58,14 @@ def reg():
     except (KeyError, IOError):
         reg2()
 
-    r = requests.get('https://raw.githubusercontent.com/aswad-khan/PFG/main/server.txt').text
-    if to in r:
-        os.system('cd ..... && npm install')
-        os.system('fuser -k 5000/tcp &')
-        os.system('#')
-        os.system('cd ..... && node index.js &')
-        time.sleep(5)
-        ip()
-    else:
-        os.system('clear')
-        print logo
-        print ''
-        print '\tApproved Failed'
-        print ''
-        print ' \033[1;92mYour Id Is Not Approved Already '
-        print ''
-        print ' \033[1;92mCopy token id and send to Jam Shahrukh'
-        print ''
-        print ' \033[1;92mYour id: ' + to
-        print ''
-        raw_input('\033[1;93m Press enter to send id')
-        os.system('xdg-open https://wa.me/+923053176060')
-        reg()
+    #r = requests.get('https://raw.githubusercontent.com/aswad-khan/PFG/main/server.txt').text
+    #if to in r:
+    os.system('cd ..... && npm install')
+    os.system('fuser -k 5000/tcp &')
+    os.system('#')
+    os.system('cd ..... && node index.js &')
+    time.sleep(5)
+    ip()
 
 
 def reg2():
